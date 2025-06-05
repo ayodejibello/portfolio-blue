@@ -8,7 +8,7 @@ import reactImg from "../assets/react.svg";
 import routerImg from "../assets/router.svg";
 import tailImg from "../assets/tailwind.svg";
 import gitImg from "../assets/github.svg";
-import logo from "../assets/me-sm:logo.png";
+import logo from "../assets/me-logo.png";
 import bg1 from "../assets/render.jpg";
 import bg2 from "../assets/3394.jpg";
 import bg3 from "../assets/bg3.jpg";
