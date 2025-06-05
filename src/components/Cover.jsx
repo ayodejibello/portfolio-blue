@@ -8,7 +8,7 @@ import reactImg from "../assets/react.svg";
 import routerImg from "../assets/router.svg";
 import tailImg from "../assets/tailwind.svg";
 import gitImg from "../assets/github.svg";
-import logo from "../assets/me-logo.png";
+import sm:logo from "../assets/me-sm:logo.png";
 import bg1 from "../assets/render.jpg";
 import bg2 from "../assets/3394.jpg";
 import bg3 from "../assets/bg3.jpg";
@@ -25,7 +25,7 @@ const Cover = () => {
         <div className="min-h-screen bg-gray-950 sm:p-10 p-8 opacity-95 flex flex-col justify-between gap-10">
           {/* desktop nav */}
           <nav className="justify-between text-sm items-center sm:flex hidden">
-            <img src={logo} alt="" className="w-20" />
+            <img src={sm:logo} alt="" className="w-20" />
             <div className="flex gap-8 items-center">
               <a href="#about">About</a>
               <a href="#projects">Projects</a>
@@ -38,7 +38,7 @@ const Cover = () => {
           </nav>
           {/* mobile nav */}
           <nav className="flex justify-between text-xs sm:hidden">
-            <img src={logo} alt="" className="sm:w-20 w-16 h-8" />
+            <img src={sm:logo} alt="" className="sm:w-20 w-16 h-8" />
             <div className="flex flex-col items-center gap-4">
               <button
                 onClick={() => {
@@ -75,15 +75,15 @@ const Cover = () => {
             </button> */}
           </div>
           <div className="flex flex-wrap justify-around sm:gap-10 gap-6 p-5">
-            <img src={htmlImg} alt="html" className="sm:size-10 size-6 logo" />
-            <img src={cssImg} alt="" className="sm:size-10 size-6 logo" />
-            <img src={nextImg} alt="" className="sm:size-10 size-6 logo" />
-            <img src={gitImg} alt="" className="sm:size-10 size-6 logo" />
-            <img src={tailImg} alt="" className="sm:size-10 size-6 logo" />
-            <img src={reactImg} alt="" className="sm:size-10 size-6 logo" />
-            <img src={jsImg} alt="" className="sm:size-10 size-6 logo" />
-            <img src={routerImg} alt="" className="sm:size-10 size-6 logo" />
-            <img src={vsImg} alt="" className="sm:size-10 size-6 logo" />
+            <img src={htmlImg} alt="html" className="sm:size-10 size-6 sm:logo" />
+            <img src={cssImg} alt="" className="sm:size-10 size-6 sm:logo" />
+            <img src={nextImg} alt="" className="sm:size-10 size-6 sm:logo" />
+            <img src={gitImg} alt="" className="sm:size-10 size-6 sm:logo" />
+            <img src={tailImg} alt="" className="sm:size-10 size-6 sm:logo" />
+            <img src={reactImg} alt="" className="sm:size-10 size-6 sm:logo" />
+            <img src={jsImg} alt="" className="sm:size-10 size-6 sm:logo" />
+            <img src={routerImg} alt="" className="sm:size-10 size-6 sm:logo" />
+            <img src={vsImg} alt="" className="sm:size-10 size-6 sm:logo" />
           </div>
         </div>
       </div>
