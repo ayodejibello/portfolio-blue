@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="tracking-wider">
         Blue &copy; copyright {new Date().getFullYear()}
       </div>
-      <div className="flex items-center gap-10">
+      <div className="flex items-center sm:gap-10 gap-2">
         <a href="">
           <img src={github} alt="" className="sm:size-7 size-5" />
         </a>

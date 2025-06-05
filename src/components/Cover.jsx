@@ -74,7 +74,7 @@ const Cover = () => {
               Request A project
             </button> */}
           </div>
-          <div className="flex flex-wrap justify-around sm:gap-10 gap-6 sm:p-4 p-10">
+          <div className="flex flex-wrap justify-around sm:gap-10 gap-6 p-5">
             <img src={htmlImg} alt="html" className="sm:size-10 size-6 logo" />
             <img src={cssImg} alt="" className="sm:size-10 size-6 logo" />
             <img src={nextImg} alt="" className="sm:size-10 size-6 logo" />
