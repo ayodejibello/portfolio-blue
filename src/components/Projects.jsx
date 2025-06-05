@@ -17,7 +17,7 @@ const Cards = ({ image, name, year, github, link }) => {
       />
       <div className="flex items-ceter justify-between mt-4 p-2  border-t-1 border-gray-200">
         <h4 className="font-bold text-gray-800">{name}</h4>
-        <div className="text-gray-600 font-bold">({year})</div>
+        <h4 className="text-gray-600 font-bold">({year})</h4>
       </div>
       <div className="flex items-center mt-4 gap-4 p-2">
         <a href={github}>
