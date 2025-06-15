@@ -4,6 +4,9 @@ import bg3 from "../assets/bg3.jpg";
 import ramen from "../assets/blue-ramen.jpg";
 import gold from "../assets/agold.jpg";
 import healthscope from "../assets/healthscope.jpg";
+import bluetodo from "../assets/bluetodo.PNG";
+import mood from "../assets/mood.PNG";
+import dict from "../assets/dict.PNG";
 import boks from "../assets/boks.jpg";
 
 //cards component
@@ -39,30 +42,51 @@ const Projects = () => {
     {
       name: "HealthScope",
       year: "2025",
-      github: "",
+      github: "https://github.com/ayodejibello/ARM",
       link: "https://healthscope-tau.vercel.app/",
       image: `${healthscope}`,
     },
     {
       name: "Boks_Web",
       year: "2025",
-      github: "",
+      github: "https://github.com/ayodejibello/boks",
       link: "https://boks-web.vercel.app/",
       image: `${boks}`,
     },
     {
       name: "BlueRamen",
       year: "2025",
-      github: "",
+      github: "https://github.com/ayodejibello/dattebayo",
       link: "https://blue-ramen.vercel.app/",
       image: `${ramen}`,
     },
     {
       name: "A-Gold",
       year: "2025",
-      github: "aa",
+      github: "https://github.com/ayodejibello/AgoldSample",
       link: "https://agold-sample.vercel.app/",
       image: `${gold}`,
+    },
+    {
+      name: "Blue To_Do",
+      year: "2024",
+      github: "https://github.com/ayodejibello/hacker-stories",
+      link: "https://bluetodo.vercel.app/",
+      image: { bluetodo },
+    },
+    {
+      name: "Thesaurus",
+      year: "2024",
+      github: "https://github.com/ayodejibello/Dictionary",
+      link: "https://bluethesaurus.vercel.app/",
+      image: { dict },
+    },
+    {
+      name: "Mood Tracker",
+      year: "2025",
+      github: "https://github.com/ayodejibello/Mood-Tracker",
+      link: "https://mood-tracker-pied-pi.vercel.app/",
+      image: { mood },
     },
   ];
   return (
