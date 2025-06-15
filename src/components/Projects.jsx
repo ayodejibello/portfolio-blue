@@ -4,9 +4,9 @@ import bg3 from "../assets/bg3.jpg";
 import ramen from "../assets/blue-ramen.jpg";
 import gold from "../assets/agold.jpg";
 import healthscope from "../assets/healthscope.jpg";
-import bluetodo from "../assets/bluetodo.PNG";
-import mood from "../assets/mood.PNG";
-import dict from "../assets/dict.PNG";
+import bluetodo from "../assets/bluetodo.jpg";
+import mood from "../assets/mood.jpg";
+import dict from "../assets/dict.jpg";
 import boks from "../assets/boks.jpg";
 
 //cards component
