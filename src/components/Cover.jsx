@@ -30,11 +30,11 @@ const Cover = () => {
               <a href="#about">About</a>
               <a href="#projects">Projects</a>
               <div className="border-button ">
-                <button className="cursor-pointer bg-gray-950 p-3  ">
-                  <a href="www.linkedin.com/in/abdullah-abdulfatai-9b8a0b2b3">
+                <a href="www.linkedin.com/in/abdullah-abdulfatai-9b8a0b2b3">
+                  <button className="cursor-pointer bg-gray-950 p-3  ">
                     Get In Touch
-                  </a>
-                </button>
+                  </button>
+                </a>
               </div>
             </div>
           </nav>
@@ -57,12 +57,11 @@ const Cover = () => {
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
                 <div className="border-button ">
-                  <button className="cursor-pointer bg-gray-950 p-2  ">
-                    <a href="www.linkedin.com/in/abdullah-abdulfatai-9b8a0b2b3">
-                      {" "}
+                  <a href="www.linkedin.com/in/abdullah-abdulfatai-9b8a0b2b3">
+                    <button className="cursor-pointer bg-gray-950 p-3  ">
                       Get In Touch
-                    </a>
-                  </button>
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
