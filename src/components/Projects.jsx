@@ -72,21 +72,21 @@ const Projects = () => {
       year: "2024",
       github: "https://github.com/ayodejibello/hacker-stories",
       link: "https://bluetodo.vercel.app/",
-      image: { bluetodo },
+      image: `${bluetodo}`,
     },
     {
       name: "Thesaurus",
       year: "2024",
       github: "https://github.com/ayodejibello/Dictionary",
       link: "https://bluethesaurus.vercel.app/",
-      image: { dict },
+      image: `${dict}`,
     },
     {
       name: "Mood Tracker",
       year: "2025",
       github: "https://github.com/ayodejibello/Mood-Tracker",
       link: "https://mood-tracker-pied-pi.vercel.app/",
-      image: { mood },
+      image: ` ${mood}`,
     },
   ];
   return (
