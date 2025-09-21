@@ -1,17 +1,10 @@
-import Cover from "./components/Cover";
-import About from "./components/About";
-import Projects from "./components/Projects";
+import Cover from "./pages/Cover";
 
-import "./App.css";
-
-function App() {
+const App = () => {
   return (
     <>
       <Cover />
-      <Projects />
-      <About />
     </>
   );
-}
-
+};
 export default App;
