@@ -328,7 +328,7 @@ const Cover = () => {
                   </p>
                   <div className="flex items-center gap-2">
                     <a
-                      href="https://sufcart-web-alpha.vercel.app"
+                      href="https://six-web-alpha.vercel.app/"
                       className="border-1 px-6 py-2 text-xs"
                     >
                       View App
@@ -422,7 +422,7 @@ const Cover = () => {
                 />
               </div>
               <form
-                action="https://formsubmit.co/ayodejibello769@gmail.com"
+                action="https://formsubmit.co/b2da66b5e51eba995f8c5209ce3db293"
                 method="POST"
                 className="w-full flex flex-col gap-y-4 font-light"
               >
