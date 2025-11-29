@@ -43,15 +43,13 @@ const Home = () => {
             Hi, I'm Abdullah
           </h1>
           <p className="text-semibold text-sm  text-center">
-            I use the following words and phrases as qualifiers: <br /> react
-            developer, speed, UI focused, learning by doing, cool UI,
-            aesthetics, react, Javasacript, minimalist...
+            A React developer focused on speed, clean aesthetics, and minimalist, UI-driven design. I learn by doing and love building cool, intuitive interfaces with JavaScript.
           </p>
           <div className="flex gap-2 text-sm">
             <Link className="px-6 py-2 border rounded-lg text-nowrap" to={"/contact"}>Contact me</Link>
-            <button className="px-6 py-2 border flex items-center gap-2 text-nowrap bg-neutral-900 text-white rounded-lg">
+            <Link className="px-6 py-2 border flex items-center gap-2 text-nowrap bg-neutral-900 text-white rounded-lg" to={"/portfolio"}>
               view my work <ArrowUpRight className="size-4" />
-            </button>
+            </Link>
           </div>
         </section >
         {/* featured projects */}
@@ -71,6 +69,8 @@ const Home = () => {
               }
               stacks={["React.js", "tailwindcss", "Github"]}
               img={clodocs}
+              link={"https://clodocs.com/"}
+              gitlink={"https://github.com/nova-technology-ltd/clodocs-website"}
             />
             <ProjectCard1
               title={"Landing page: Sufcart"}
@@ -79,6 +79,8 @@ const Home = () => {
               }
               stacks={["React.js", "tailwindcss", "Github"]}
               img={six}
+              link={"https://six-web-alpha.vercel.app/"}
+              gitlink={"https://github.com/nova-technology-ltd/six-web"}
             />
             <ProjectCard1
               title={"Music player: Bluetopia"}
@@ -87,6 +89,8 @@ const Home = () => {
               }
               stacks={["Html", "css", "JavaScript", "audio api", " github"]}
               img={bluetopia}
+              link={"https://bluetopia.vercel.app/"}
+              gitlink={"https://github.com/ayodejibello/musik-app"}
             />
           </div>
         </section >

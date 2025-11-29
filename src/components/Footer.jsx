@@ -16,7 +16,7 @@ const Footer = () => {
         &copy; All rights reserved for Abdullah A. Abdulfatai.
       </div>
       <div className="flex md:justify-center sm:gap-6 gap-3 sm:text-sm text-xs font-medium ">
-        <Link>Projects</Link>
+        <Link to={"/portfolio"}>Portfolio</Link>
         <Link>Blogs</Link>
         <Link to={"/contact"}>Contact me</Link>
       </div>

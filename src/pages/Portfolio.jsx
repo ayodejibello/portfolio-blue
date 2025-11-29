@@ -4,6 +4,7 @@ import { ProjectCard1 } from '../components/ProjectCard'
 import clodocs from "../assets/clodocs3.png";
 import six from "../assets/six-app.png";
 import bluetopia from "../assets/bluetopia-snip.png";
+import lost from "../assets/lost-and-found.png";
 import PageWrap from '../components/PageWrap'
 const Portfolio = () => {
     return <PageWrap>
@@ -18,6 +19,8 @@ const Portfolio = () => {
                     }
                     stacks={["React.js", "tailwindcss", "Github"]}
                     img={clodocs}
+                    link={"https://clodocs.com/"}
+                    gitlink={"https://github.com/nova-technology-ltd/clodocs-website"}
                 />
                 <ProjectCard1
                     title={"Landing page: Sufcart"}
@@ -26,6 +29,8 @@ const Portfolio = () => {
                     }
                     stacks={["React.js", "tailwindcss", "Github"]}
                     img={six}
+                    link={"https://six-web-alpha.vercel.app/"}
+                    gitlink={"https://github.com/nova-technology-ltd/six-web"}
                 />
                 <ProjectCard1
                     title={"Music player: Bluetopia"}
@@ -34,6 +39,18 @@ const Portfolio = () => {
                     }
                     stacks={["Html", "css", "JavaScript", "audio api", " github"]}
                     img={bluetopia}
+                    link={"https://bluetopia.vercel.app/"}
+                    gitlink={"https://github.com/ayodejibello/musik-app"}
+                />
+                <ProjectCard1
+                    title={"Lost and Found Site"}
+                    description={
+                        "An application for announcing and viewing lost items."
+                    }
+                    stacks={["Html", "tailwindcss", "React.js", " github"]}
+                    img={lost}
+                    link={"https://lost-and-found-web-rust.vercel.app/"}
+                    gitlink={"https://vercel.com/abdullahs-projects-3a39eec4?repo=https://github.com/ayodejibello/lost-and-found-web"}
                 />
             </div>
         </main>

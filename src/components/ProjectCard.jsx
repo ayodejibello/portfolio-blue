@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 
-export const ProjectCard1 = ({ img, stacks, description, title }) => {
+export const ProjectCard1 = ({ img, stacks, description, title, link, gitlink }) => {
   return (
     <>
       <div className="flex md:flex-row flex-col sm:gap-10 gap-5 w-full sm:p-8 p-4">
@@ -21,10 +21,10 @@ export const ProjectCard1 = ({ img, stacks, description, title }) => {
           </div>
           <p className="text-sm font-light text-wrap">{description}</p>
           <div className="flex gap-10 items-center text-sm">
-            <a className=" border-1 px-6 py-2  hover:text-neutral-950 transition duration-200 ease-linear">
+            <a className=" border-1 px-6 py-2  hover:text-neutral-950 transition duration-200 ease-linear" href={gitlink}>
               View Github
             </a>
-            <a className="flex items-center gap-1 border-b ">
+            <a className="flex items-center gap-1 border-b " href={link}>
               View project <ArrowUpRight className="w-6" />
             </a>
           </div>
