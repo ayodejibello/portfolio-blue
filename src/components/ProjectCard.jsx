@@ -10,10 +10,10 @@ export const ProjectCard1 = ({ img, stacks, description, title }) => {
         ></div>
         <div className="flex flex-col gap-5 md:w-1/2 w-full">
           <h1>{title}</h1>
-          <div className="flex gap-5 items-center">
+          <div className="grid sm:grid-cols-5 grid-cols-3 gap-5 items-center w-full">
             {stacks.map((stack) => {
               return (
-                <span className="px-2 py-1 text-xs rounded-full bg-gray-900 text-white">
+                <span className="px-2 py-1 text-xs rounded-full bg-gray-900 w-max text-white">
                   {stack}
                 </span>
               );

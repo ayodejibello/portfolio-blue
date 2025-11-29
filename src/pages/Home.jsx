@@ -36,7 +36,7 @@ const Home = () => {
       >
         {/* hero */}
         <section
-          className="p-10 flex flex-col items-center justify-center gap-10 h-screen  "
+          className="sm:p-10 p-5 flex flex-col items-center justify-center gap-10 md:h-screen h-[50vh]  "
           style={{ backgroundImage: `url($)` }}
         >
           <h1 className="lg:text-5xl md:text-3xl text-2xl  font-semibold">
@@ -48,22 +48,22 @@ const Home = () => {
             aesthetics, react, Javasacript, minimalist...
           </p>
           <div className="flex gap-2 text-sm">
-            <Link className="px-6 py-2 border rounded-lg" to={"/contact"}>Contact me</Link>
-            <button className="px-6 py-2 border flex items-center gap-2 bg-neutral-900 text-white rounded-lg">
+            <Link className="px-6 py-2 border rounded-lg text-nowrap" to={"/contact"}>Contact me</Link>
+            <button className="px-6 py-2 border flex items-center gap-2 text-nowrap bg-neutral-900 text-white rounded-lg">
               view my work <ArrowUpRight className="size-4" />
             </button>
           </div>
         </section >
         {/* featured projects */}
         < section className="min-h-screen" >
-          <div className="flex justify-between items-center p-10">
-            <h1 className="text-2xl font-semibold">-Featured projects</h1>
+          <div className="flex justify-between items-center sm:p-10 p-5">
+            <h1 className="sm:text-2xl text-lg font-semibold">-Featured projects</h1>
             <Link className="flex items-center text-sm">
               View all Projects <ArrowUpRight className="size-5" />
             </Link>
           </div>
 
-          <div className="flex flex-col items-center mx-auto w-full gap-20 sm:my-10 my-5 p-4">
+          <div className="flex flex-col items-center mx-auto w-full sm:gap-20 gap-10 sm:my-10 my-5 p-4">
             <ProjectCard1
               title={"Clodocs (SaaS) project"}
               description={
@@ -91,7 +91,7 @@ const Home = () => {
           </div>
         </section >
         {/* Skills */}
-        < section className="min-h-screen p-10" >
+        < section className="min-h-screen sm:p-10 p-5" >
           <h1 className=" text-2xl font-semibold my-10">-Skills and Tools</h1>
 
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 text-sm">
