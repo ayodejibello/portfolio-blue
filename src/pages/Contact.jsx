@@ -14,7 +14,7 @@ const Contact = () => {
                 <a href="https://www.linkedin.com/in/abdullah-abdulfatai-9b8a0b2b3/">linkedIn</a>
                 <a href="https://x.com/_bello_Jnr">twitter</a>
             </div>
-            <form className="flex flex-col gap-4 p-10 items-center md:w-1/2 sm:w-2/3 w-full" >
+            <form className="flex flex-col gap-4 p-10 items-center md:w-1/2 sm:w-2/3 w-full" action="https://formsubmit.co/ayodejibello769@gmail.com" method="POST" >
                 <input type="text" className='w-full border-b outline-none p-2' placeholder='Name'
                     name="name" />
                 <input type="email"
