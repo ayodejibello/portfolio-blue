@@ -11,7 +11,7 @@ const Portfolio = () => {
         <Nav />
         <main className='sm:p-10 p-5 md:min-h-screen'>
             <h1 className='sm:text-3xl text-lg text-center sm:py-10 py-5'>All projects</h1>
-            <div className="">
+            <div className="grid grid-cols-1 gap-4">
                 <ProjectCard1
                     title={"Clodocs (SaaS) project"}
                     description={

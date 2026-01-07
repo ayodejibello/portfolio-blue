@@ -54,9 +54,9 @@ const Nav = () => {
             </button>
           </div>
         }
-        <div className=" left-0 right-0 h-screen top-0 bottom-0 fixed z-1 overflow-hidden " onClick={() => {
+        {show && <div className=" left-0 right-0 h-screen top-0 bottom-0 fixed z-1 overflow-hidden " onClick={() => {
           setShow(false)
-        }}></div>
+        }}></div>}
 
         {/*  */}
       </nav >

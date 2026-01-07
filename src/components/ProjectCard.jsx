@@ -3,7 +3,7 @@ import { ArrowUpRight } from "lucide-react";
 export const ProjectCard1 = ({ img, stacks, description, title, link, gitlink }) => {
   return (
     <>
-      <div className="flex md:flex-row flex-col sm:gap-10 gap-5 w-full sm:p-8 p-4">
+      <div className="flex md:flex-row flex-col sm:gap-10 gap-5 w-full sm:p-8 p-4 h-full bg-blue-300">
         <div
           className="md:w-1/2 md:h-auto h-[50vh] w-full bg-contain bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${img})` }}
@@ -20,7 +20,7 @@ export const ProjectCard1 = ({ img, stacks, description, title, link, gitlink })
             })}
           </div>
           <p className="text-sm font-light text-wrap">{description}</p>
-          <div className="flex gap-10 items-center text-sm">
+          <div className="flex gap-10 items-center text-sm h-full ">
             <a className=" border-1 px-6 py-2  hover:text-neutral-950 transition duration-200 ease-linear" href={gitlink}>
               View Github
             </a>
@@ -33,10 +33,4 @@ export const ProjectCard1 = ({ img, stacks, description, title, link, gitlink })
     </>
   );
 };
-export const ProjectCard2 = () => {
-  return (
-    <>
-      <div className="flex"></div>
-    </>
-  );
-};
+
