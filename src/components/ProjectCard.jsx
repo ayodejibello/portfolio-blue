@@ -3,7 +3,7 @@ import { ArrowUpRight } from "lucide-react";
 export const ProjectCard1 = ({ img, stacks, description, title, link, gitlink }) => {
   return (
     <>
-      <div className="flex md:flex-row flex-col sm:gap-10 gap-5 w-full sm:p-8 p-4 h-full bg-blue-300">
+      <div className="flex md:flex-row flex-col sm:gap-10 gap-5 w-full sm:p-8 p-4 h-full">
         <div
           className="md:w-1/2 md:h-auto h-[50vh] w-full bg-contain bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${img})` }}
