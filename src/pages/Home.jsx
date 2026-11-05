@@ -11,7 +11,10 @@ import cssIcon from "../assets/css.svg";
 import github from "../assets/github.svg";
 import js from "../assets/js.svg";
 import tailwindIcon from "../assets/tailwind.svg";
+import viteIcon from "../assets/vite.png";
 import vscode from "../assets/vscode.svg";
+import supabaseIcon from "../assets/supabase.png";
+import tsIcon from "../assets/ts.png";
 
 // Project Images
 import clodocs from "../assets/clodocs3.png";
@@ -100,7 +103,7 @@ const Home = () => {
                 <li className="flex items-center gap-3"><img src={htmlIcon} className="w-8 h-8" alt="HTML"/> HTML5</li>
                 <li className="flex items-center gap-3"><img src={cssIcon} className="w-8 h-8" alt="CSS"/> CSS3</li>
                 <li className="flex items-center gap-3"><img src={js} className="w-8 h-8" alt="JS"/> JavaScript (ES6+)</li>
-                <li className="flex items-center gap-3"><span className="w-8 h-8 bg-blue-600 text-white flex items-center justify-center font-serif font-bold rounded">TS</span> TypeScript</li>
+                <li className="flex items-center gap-3"><img src={tsIcon} className="w-8 h-8" alt="TypeScript"/> TypeScript</li>
               </ul>
             </div>
 
@@ -110,7 +113,7 @@ const Home = () => {
               <ul className="space-y-4 font-bold text-lg">
                 <li className="flex items-center gap-3"><img src={reactIcon} className="w-8 h-8" alt="React"/> React.js</li>
                 <li className="flex items-center gap-3"><img src={tailwindIcon} className="w-8 h-8" alt="Tailwind"/> Tailwind CSS</li>
-                <li className="flex items-center gap-3"><span className="w-8 h-8 bg-purple-600 text-white flex items-center justify-center font-bold rounded">V</span> Vite</li>
+                <li className="flex items-center gap-3"><img src={viteIcon} className="w-8 h-8" alt="Vite"/> Vite</li>
               </ul>
             </div>
 
@@ -120,7 +123,7 @@ const Home = () => {
               <ul className="space-y-4 font-bold text-lg">
                 <li className="flex items-center gap-3"><img src={github} className="w-8 h-8 bg-black rounded-full p-1" alt="Git"/> Git & GitHub</li>
                 <li className="flex items-center gap-3"><img src={vscode} className="w-8 h-8" alt="VSCode"/> VS Code</li>
-                <li className="flex items-center gap-3"><span className="w-8 h-8 bg-orange-500 text-white flex items-center justify-center font-bold rounded">S</span> Supabase</li>
+                <li className="flex items-center gap-3"><img src={supabaseIcon} className="w-8 h-8" alt="Supabase"/> Supabase</li>
               </ul>
             </div>
           </div>
