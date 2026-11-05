@@ -1,65 +1,58 @@
 import { Code2, Menu, Moon, Sun, X } from "lucide-react";
 import { Link } from "react-router-dom";
-import { ModeContext } from "../Context/ModeProvider";
+
 import { useContext, useState } from "react";
 
 const Nav = () => {
-  const [show, setShow] = useState(false)
-  const { mode, toggleMode } = useContext(ModeContext)
+  const [show, setShow] = useState(false);
+
+  
+  // Brutalist utility classes
+  const brutalBorder = "border-4 border-black";
+  const brutalShadow = "shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]";
+
   return (
     <>
-      {/* desktop, tablet nav */}
-      <nav className={"md:flex hidden justify-between p-10 text-sm"}>
-        <h1 className="flex gap-2 items-center">
-          {" "}
-          <Code2 /> Blue's Domain
+      {/* Desktop Nav */}
+      <nav className="md:flex hidden justify-between p-6 md:p-10 text-sm font-bold uppercase tracking-wide bg-white border-b-4 border-black">
+        <h1 className="flex gap-2 items-center text-xl">
+          <Code2 className="w-8 h-8" /> Blue's Domain
         </h1>
-        <div className="flex gap-5 items-center">
-          <Link to={"/"}>Home</Link>
-          <Link to={"/about"}>About</Link>
-          <Link to={"/portfolio"}>Portfolio</Link>
-          <Link to={"/contact"}>Contact me</Link>
-          <Link className="text-gray-400">Blogs</Link>
-          <button onClick={toggleMode} className="cursor-pointer">
-            {mode == "light" ? <Moon /> : <Sun />}
-          </button>
+        <div className="flex gap-8 items-center">
+          <Link to={"/"} className="hover:bg-[#FFDE00] px-2 py-1 transition-colors">Home</Link>
+          <Link to={"/about"} className="hover:bg-[#FFDE00] px-2 py-1 transition-colors">About</Link>
+          <Link to={"/projects"} className="hover:bg-[#FFDE00] px-2 py-1 transition-colors">Projects</Link>
+          <Link to={"/contact"} className="hover:bg-[#FFDE00] px-2 py-1 transition-colors">Contact</Link>
+          
+       
         </div>
-      </nav >
-      {/* mobile */}
-      < nav className="md:hidden flex flex-col p-6 relative" >
-        <div className="flex justify-between w-full">
-          <h1 className="flex gap-2 items-center z-2">
-            <Code2 /> Blue's Domain
+      </nav>
+
+      {/* Mobile Nav */}
+      <nav className="md:hidden flex flex-col p-6 relative bg-white border-b-4 border-black">
+        <div className="flex justify-between w-full items-center">
+          <h1 className="flex gap-2 items-center z-20 font-bold text-xl">
+            <Code2 className="w-8 h-8" /> Blue's Domain
           </h1>
-          <button className="z-2 cursor-pointer" onClick={() => {
-            show ? setShow(false) : setShow(true)
-          }}>
+          <button 
+            className="z-20 cursor-pointer p-2 border-2 border-black rounded bg-white" 
+            onClick={() => setShow(!show)}
+          >
             {show ? <X /> : <Menu />}
           </button>
         </div>
-        {/*  */}
-        {
-          show && <div className={`${mode == "light" ? "bg-white text-neutral-950 shadow-gray-300" : "bg-neutral-950 text-white shadow-gray-700"} z-10 flex flex-col shadow-sm  gap-4 w-[90%] p-10 justify-center items-start rounded-xl text-sm absolute top-12 right-4 left-4 `}>
-            <Link to={"/"}>Home</Link>
-            <Link to={"/about"}>About</Link>
-            <Link to={"/portfolio"}>Portfolio</Link>
-            <Link to={"/contact"}>Contact</Link>
-            <Link className="text-gray-400">My blogs</Link>
-            <button
-              onClick={toggleMode}
-              className="cursor-pointer flex items-center gap-2 border w-full p-1 text-sm rounded-lg justify-center"
-            >
-              {mode == "light" ? <Moon className="size-4" /> : <Sun className="size-4" />}
-              mode
-            </button>
+        
+        {show && (
+          <div className="z-10 flex flex-col gap-4 w-full mt-6 p-6 bg-[#EAE8E3] border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] absolute top-full left-0 right-0">
+            <Link to={"/"} onClick={() => setShow(false)}>Home</Link>
+            <Link to={"/about"} onClick={() => setShow(false)}>About</Link>
+            <Link to={"/projects"} onClick={() => setShow(false)}>Projects</Link>
+            <Link to={"/contact"} onClick={() => setShow(false)}>Contact</Link>
+            
+           
           </div>
-        }
-        {show && <div className=" left-0 right-0 h-screen top-0 bottom-0 fixed z-1 overflow-hidden " onClick={() => {
-          setShow(false)
-        }}></div>}
-
-        {/*  */}
-      </nav >
+        )}
+      </nav>
     </>
   );
 };
