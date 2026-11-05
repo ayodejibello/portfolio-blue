@@ -9,7 +9,7 @@ export const ProjectCard1 = ({ img, stacks, description, title, link, gitlink })
     <div className={`flex md:flex-row flex-col w-full bg-white ${brutalBorder} ${brutalShadow} ${brutalHover}`}>
       
       {/* Image Side */}
-      <div className="md:w-1/2 w-full h-64 md:h-auto border-b-4 md:border-b-0 md:border-r-4 border-black overflow-hidden bg-gray-100">
+      <div className="md:w-1/2 w-full h-64 md:h-auto border-b-4 md:border-b-0 md:border-r-4 border-black overflow-hidden bg-gray-100 p-4">
         <img 
             src={img} 
             alt={title} 

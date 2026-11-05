@@ -8,13 +8,12 @@ import six from "../assets/six-app.png";
 import bluetopia from "../assets/bluetopia-snip.png";
 import lost from "../assets/lost-and-found.png";
 // Placeholders for projects without images
-import tostPlaceholder from "../assets/lost-and-found.png"; 
-import upsidePlaceholder from "../assets/lost-and-found.png";
-import doorgrabPlaceholder from "../assets/lost-and-found.png";
+import tostPlaceholder from "../assets/tost.png"; 
+import upsidePlaceholder from "../assets/upside.png";
+import doorgrabPlaceholder from "../assets/doorgrab.png";
 
 const Projects = () => {
-    const brutalBorder = "border-4 border-black";
-    const brutalShadow = "shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]";
+    
 
     return (
         <>
